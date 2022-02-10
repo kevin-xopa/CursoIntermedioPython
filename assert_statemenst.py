@@ -21,8 +21,8 @@ def run():
 
     num = input('Ingresa un número: ')
     assert num.isnumeric(), "Debes ingresar un número"
-    print(divisors(int(num)))   
-    print("Terminó mi programa")
+    print(divisors(int(num)))
+    print("Terminó el programa")
 
 
 if __name__ == '__main__':
