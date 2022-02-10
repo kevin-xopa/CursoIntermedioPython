@@ -1,5 +1,5 @@
 # method that receives an int and returns a list
-def divisor(num):
+def divisors(num):
     divisors = []
     for i in range(1, num + 1):
         if num % i == 0:
@@ -8,9 +8,16 @@ def divisor(num):
 
 
 def run():
-    num = int(input("Ingresa un numero: "))
-    print(divisor(num))
-    print("Termina el programa")
+    while True:
+        try:
+            num = int(input('Ingresa un número: '))
+            if num < 0 or num == 0:
+                raise ValueError
+            print(divisors(num))
+            print("Terminó mi programa")
+            break
+        except ValueError:
+            print("Debes ingresar un entero positivo")
 
 
 if __name__ == '__main__':
