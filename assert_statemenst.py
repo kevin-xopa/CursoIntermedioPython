@@ -20,6 +20,7 @@ def run():
     #         print("Debes ingresar un entero positivo")
 
     num = input('Ingresa un número: ')
+    # stated that it is a number
     assert num.isnumeric(), "Debes ingresar un número"
     print(divisors(int(num)))
     print("Terminó el programa")
